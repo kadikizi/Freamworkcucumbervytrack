@@ -2,7 +2,9 @@
 package com.cydeo.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -15,7 +17,7 @@ public class Driver {
 
     private static  InheritableThreadLocal<WebDriver> driverpool=new InheritableThreadLocal<>();
 
-    private static WebDriver driver;
+    public static WebDriver driver;
 
     public static WebDriver getDriver() {
         if (driverpool.get() == null) {
@@ -49,4 +51,7 @@ public class Driver {
         }
     }
 
+    public static WebElement findElement(By logoutButton) {
+        return null;
+    }
 }

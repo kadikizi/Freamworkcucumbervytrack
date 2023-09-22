@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
         tags = ""
 )
 
- class cooksrunner {
+ class CukesRunner {
+
 
 }

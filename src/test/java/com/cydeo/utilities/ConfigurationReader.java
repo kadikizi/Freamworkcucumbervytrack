@@ -1,5 +1,5 @@
-```java
-        package com.cydeo.utilities;
+
+package com.cydeo.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -26,4 +26,3 @@ public class ConfigurationReader {
         return properties.getProperty(keyword);
     }
 }
-```
